@@ -84,6 +84,7 @@
     </dependencies>
 
     <build>
+        <testSourceDirectory>${project.basedir}/src/test/groovy</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -104,8 +105,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>compile</goal>
-                            <goal>testCompile</goal>
+                            <goal>compileTests</goal>
                         </goals>
                     </execution>
                 </executions>
